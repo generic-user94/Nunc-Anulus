@@ -12,6 +12,9 @@ public class ModItems {
     public static final DeferredItem<Item> ANULITE = ITEMS.register("anulite",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> RAW_ANULITE = ITEMS.register("raw_anulite",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
