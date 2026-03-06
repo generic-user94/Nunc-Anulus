@@ -1,0 +1,6 @@
+{
+  "parent":"minecraft:block/cube_all",
+  "textures": {
+    "all": "nuncanulus:block/raw_anulite_block"
+  }
+}
