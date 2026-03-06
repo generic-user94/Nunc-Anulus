@@ -1,5 +1,6 @@
 package net.generic_user94.nuncanulus;
 
+import net.generic_user94.nuncanulus.block.ModBlocks;
 import net.generic_user94.nuncanulus.item.ModItems;
 import org.slf4j.Logger;
 
@@ -52,6 +53,7 @@ public class NuncAnulus {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -69,6 +71,10 @@ public class NuncAnulus {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ANULITE);
             event.accept(ModItems.RAW_ANULITE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ANULITE_BLOCK);
         }
     }
 
