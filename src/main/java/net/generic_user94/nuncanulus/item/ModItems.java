@@ -1,6 +1,7 @@
 package net.generic_user94.nuncanulus.item;
 
 import net.generic_user94.nuncanulus.NuncAnulus;
+import net.generic_user94.nuncanulus.item.custom.ChiselItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -15,6 +16,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> RAW_ANULITE = ITEMS.register("raw_anulite",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(1000)));
 
 
     public static void register(IEventBus eventBus){
