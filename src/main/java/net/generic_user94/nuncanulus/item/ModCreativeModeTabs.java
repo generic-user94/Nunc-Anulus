@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ANULITE);
                         output.accept(ModItems.RAW_ANULITE);
                         output.accept(ModItems.CHISEL);
+                        output.accept(ModItems.BURGER);
 
                     }).build());
 
