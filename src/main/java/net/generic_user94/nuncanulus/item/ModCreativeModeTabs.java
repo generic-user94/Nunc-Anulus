@@ -40,10 +40,23 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModBlocks.ANULITE_BLOCK);
-                        output.accept(ModBlocks.RAW_ANULITE_BLOCK);
                         output.accept(ModBlocks.ANULITE_ORE);
+
                         output.accept(ModBlocks.MAGIC_BLOCK);
                         output.accept(ModBlocks.MAGIC_BLOCK_TWO);
+
+                        output.accept(ModBlocks.ANULITE_STAIR);
+                        output.accept(ModBlocks.ANULITE_SLAB);
+
+                        output.accept(ModBlocks.ANULITE_PRESSURE_PLATE);
+                        output.accept(ModBlocks.ANULITE_BUTTON);
+
+                        output.accept(ModBlocks.ANULITE_DOOR);
+                        output.accept(ModBlocks.ANULITE_TRAPDOOR);
+
+                        output.accept(ModBlocks.ANULITE_FENCE);
+                        output.accept(ModBlocks.ANULITE_FENCE_GATE);
+                        output.accept(ModBlocks.ANULITE_WALL);
 
                     }).build());
 
