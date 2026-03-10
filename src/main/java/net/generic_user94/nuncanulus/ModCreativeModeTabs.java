@@ -1,8 +1,7 @@
-package net.generic_user94.nuncanulus.item;
+package net.generic_user94.nuncanulus;
 
-import net.generic_user94.nuncanulus.NuncAnulus;
 import net.generic_user94.nuncanulus.block.ModBlocks;
-import net.minecraft.client.Minecraft;
+import net.generic_user94.nuncanulus.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -57,6 +56,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ANULITE_FENCE);
                         output.accept(ModBlocks.ANULITE_FENCE_GATE);
                         output.accept(ModBlocks.ANULITE_WALL);
+
+                        output.accept(ModBlocks.ANULITE_LAMP);
 
                     }).build());
 

@@ -1,9 +1,10 @@
-// 1.21.1	2026-03-09T17:52:19.0522382	Block States: nuncanulus
+// 1.21.1	2026-03-10T16:52:49.6524962	Block States: nuncanulus
 4f672438f80bd81879eb7954980f09ae8e1d8b34 assets/nuncanulus/blockstates/anulite_block.json
 3ceff484aef2f2c7c95a03274607731f7b5e6c32 assets/nuncanulus/blockstates/anulite_button.json
 dda795621daef6cd6143a7577b735bab89f6f223 assets/nuncanulus/blockstates/anulite_door.json
 b13a961dfec861f07b3334bc31d6c69a62df141f assets/nuncanulus/blockstates/anulite_fence.json
 fce6029803e0860d75f1db24867a41bd6cf7be38 assets/nuncanulus/blockstates/anulite_fence_gate.json
+a0b8944ee974e737e5fa24db4e288f70e149bbcd assets/nuncanulus/blockstates/anulite_lamp.json
 0eb29fdae49ba589f78a2c59061d12dba7ad8e9e assets/nuncanulus/blockstates/anulite_ore.json
 28037afab3156a71f821aec1091b0b1000fbfdd6 assets/nuncanulus/blockstates/anulite_pressure_plate.json
 da73891fd48062141700d27c11d627f8639d2318 assets/nuncanulus/blockstates/anulite_slab.json
@@ -29,6 +30,8 @@ ecf21e3c25dbd1870a8f1dc06cb31604d14f4066 assets/nuncanulus/models/block/anulite_
 bc45659c40ae38b144de65884b2adbb267f36a4b assets/nuncanulus/models/block/anulite_fence_gate_wall_open.json
 3ca9a5de78aef3cc068bb28b2a9da693d2fa6bfe assets/nuncanulus/models/block/anulite_fence_post.json
 6049e0e8833aa926b257a303966fada69b5b2e2f assets/nuncanulus/models/block/anulite_fence_side.json
+2c5a279d4e7389824349116e414e18241beede0d assets/nuncanulus/models/block/anulite_lamp_off.json
+8ec179ccca9c2968aae6c217cbda67a73d1cd23b assets/nuncanulus/models/block/anulite_lamp_on.json
 5b0a8fda7502c82ba81541c380d295c4e0922375 assets/nuncanulus/models/block/anulite_ore.json
 cba25520415ea1182410e953a2d84db58242508b assets/nuncanulus/models/block/anulite_pressure_plate.json
 de8af784f99cb036b80fa519993c067d23fda438 assets/nuncanulus/models/block/anulite_pressure_plate_down.json
@@ -47,6 +50,7 @@ eb646ba836dcdedfc4c28e2757ac0bcbd815af93 assets/nuncanulus/models/block/magic_bl
 f2a3bd852a5b1db6a5ae5be77c6e1863fc5f2ced assets/nuncanulus/models/block/magic_block_two.json
 16a27618d7a160150779f9246b9fab55a0ae33bf assets/nuncanulus/models/item/anulite_block.json
 e393ab1f87fe4f6d4eddf6ee70ea60a986d6e8e6 assets/nuncanulus/models/item/anulite_fence_gate.json
+d20fa19b76dfc18eda0dd626db29bb84a7cbc1c0 assets/nuncanulus/models/item/anulite_lamp.json
 f29e260547816dd8cf32c217310d486cbebfe089 assets/nuncanulus/models/item/anulite_ore.json
 f710912509a2151acea7d34860c406393eb27e79 assets/nuncanulus/models/item/anulite_pressure_plate.json
 140238532d48cb6ff143045783fc5129696dbf2b assets/nuncanulus/models/item/anulite_slab.json

@@ -3,8 +3,11 @@ package net.generic_user94.nuncanulus.datagen;
 import com.jcraft.jorbis.Block;
 import net.generic_user94.nuncanulus.NuncAnulus;
 import net.generic_user94.nuncanulus.block.ModBlocks;
+import net.generic_user94.nuncanulus.block.custom.AnuliteLampBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -47,6 +50,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 "cutout");
         blockItem(ModBlocks.ANULITE_TRAPDOOR, "_bottom");
 
+        customLamp();
+
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
@@ -59,6 +64,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockItem(DeferredBlock<?> deferredBlock, String appendix) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("nuncanulus:block/" + deferredBlock.getId().getPath() + appendix));
+    }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.ANULITE_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(AnuliteLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("anulite_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(NuncAnulus.MOD_ID, "block/" + "anulite_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("anulite_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(NuncAnulus.MOD_ID, "block/" + "anulite_lamp_off")))};
+            }
+        });
+
+        simpleBlockItem(ModBlocks.ANULITE_LAMP.get(), models().cubeAll("anulite_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(NuncAnulus.MOD_ID, "block/" + "anulite_lamp_on")));
     }
 
 }

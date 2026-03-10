@@ -1,6 +1,7 @@
 package net.generic_user94.nuncanulus.block;
 
 import net.generic_user94.nuncanulus.NuncAnulus;
+import net.generic_user94.nuncanulus.block.custom.AnuliteLampBlock;
 import net.generic_user94.nuncanulus.block.custom.MagicBlock;
 import net.generic_user94.nuncanulus.block.custom.MagicBlockTwo;
 import net.generic_user94.nuncanulus.item.ModItems;
@@ -91,6 +92,12 @@ public class ModBlocks {
                             .strength(2f)
                             .requiresCorrectToolForDrops()
                             .noOcclusion()));
+
+    public static final DeferredBlock<Block> ANULITE_LAMP = registerBlock("anulite_lamp",
+            () -> new AnuliteLampBlock(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(AnuliteLampBlock.CLICKED) ? 15 : 0)));
 
 
 

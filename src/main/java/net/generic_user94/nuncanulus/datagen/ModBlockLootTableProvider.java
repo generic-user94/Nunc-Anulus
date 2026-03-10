@@ -50,6 +50,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.ANULITE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.ANULITE_DOOR.get()));
 
+        dropSelf(ModBlocks.ANULITE_LAMP.get());
+
 
 
     }
