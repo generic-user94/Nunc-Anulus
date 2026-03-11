@@ -1,6 +1,7 @@
 package net.generic_user94.nuncanulus.item.custom;
 
 import net.generic_user94.nuncanulus.block.ModBlocks;
+import net.generic_user94.nuncanulus.component.ModDataComponents;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -49,6 +50,8 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.ARMADILLO_ROLL, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
         }
 
@@ -62,6 +65,10 @@ public class ChiselItem extends Item {
             tooltipComponents.add(Component.translatable("tooltip.nuncanulus.chisel.shift_down"));
         } else {
             tooltipComponents.add(Component.translatable("tooltip.nuncanulus.chisel"));
+        }
+
+        if (stack.get(ModDataComponents.COORDINATES) != null) {
+            tooltipComponents.add(Component.literal("Last block changed at: " + stack.get(ModDataComponents.COORDINATES)));
         }
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);

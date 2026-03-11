@@ -1,6 +1,7 @@
 package net.generic_user94.nuncanulus;
 
 import net.generic_user94.nuncanulus.block.ModBlocks;
+import net.generic_user94.nuncanulus.component.ModDataComponents;
 import net.generic_user94.nuncanulus.item.ModItems;
 import org.slf4j.Logger;
 
@@ -40,6 +41,8 @@ public class NuncAnulus {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
