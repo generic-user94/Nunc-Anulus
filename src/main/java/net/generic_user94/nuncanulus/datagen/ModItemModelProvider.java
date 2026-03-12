@@ -7,9 +7,11 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 public class ModItemModelProvider extends ItemModelProvider {
 
@@ -23,7 +25,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ANULITE.get());
         basicItem(ModItems.RAW_ANULITE.get());
 
-        basicItem(ModItems.CHISEL.get());
+        handheldItem(ModItems.CHISEL.get());
         basicItem(ModItems.BURGER.get());
 
         buttonItem(ModBlocks.ANULITE_BUTTON, ModBlocks.ANULITE_BLOCK);
@@ -31,6 +33,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.ANULITE_WALL, ModBlocks.ANULITE_BLOCK);
 
         basicItem(ModBlocks.ANULITE_DOOR.asItem());
+
+        handheldItem(ModItems.ANULITE_SWORD.get());
+        handheldItem(ModItems.ANULITE_PICKAXE.get());
+        handheldItem(ModItems.ANULITE_AXE.get());
+        handheldItem(ModItems.ANULITE_HOE.get());
+        handheldItem(ModItems.ANULITE_SHOVEL.get());
 
     }
 
@@ -50,5 +58,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall",  ResourceLocation.fromNamespaceAndPath(NuncAnulus.MOD_ID,
                         "block/" + baseBlock.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(NuncAnulus.MOD_ID,"item/" + item.getId().getPath()));
     }
 }

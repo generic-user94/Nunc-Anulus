@@ -2,6 +2,7 @@ package net.generic_user94.nuncanulus.datagen;
 
 import net.generic_user94.nuncanulus.NuncAnulus;
 import net.generic_user94.nuncanulus.block.ModBlocks;
+import net.generic_user94.nuncanulus.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -38,6 +39,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.ANULITE_FENCE_GATE.get());
         tag(BlockTags.WALLS)
                 .add(ModBlocks.ANULITE_WALL.get());
+
+        tag(ModTags.Blocks.NEEDS_ANULITE_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+        tag(ModTags.Blocks.INCORRECT_FOR_ANULITE_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_ANULITE_TOOL);
 
     }
 }

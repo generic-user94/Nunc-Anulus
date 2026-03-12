@@ -6,6 +6,7 @@ import net.generic_user94.nuncanulus.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -25,6 +26,22 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.ANULITE.get())
                 .add(Items.STICK)
                 .add(Items.COAL);
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.ANULITE_SWORD.get());
+
+        tag(ItemTags.AXES)
+                .add(ModItems.ANULITE_AXE.get());
+
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.ANULITE_PICKAXE.get());
+
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.ANULITE_SHOVEL.get());
+
+        tag(ItemTags.HOES)
+                .add(ModItems.ANULITE_HOE.get());
+
     }
 
 }

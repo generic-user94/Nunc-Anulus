@@ -25,8 +25,15 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.ANULITE);
                         output.accept(ModItems.RAW_ANULITE);
+
                         output.accept(ModItems.CHISEL);
                         output.accept(ModItems.BURGER);
+
+                        output.accept(ModItems.ANULITE_SWORD);
+                        output.accept(ModItems.ANULITE_AXE);
+                        output.accept(ModItems.ANULITE_PICKAXE);
+                        output.accept(ModItems.ANULITE_SHOVEL);
+                        output.accept(ModItems.ANULITE_HOE);
 
                     }).build());
 

@@ -25,6 +25,12 @@
 
   "block.nuncanulus.anulite_lamp": "Anulite Lamp",
 
+  "item.nuncanulus.anulite_sword": "Anulite Sword",
+  "item.nuncanulus.anulite_hoe": "Anulite Hoe",
+  "item.nuncanulus.anulite_pickaxe": "Anulite Pickaxe",
+  "item.nuncanulus.anulite_axe": "Anulite Axe",
+  "item.nuncanulus.anulite_shovel": "Anulite Shovel",
+
   "creativetab.nuncanulus.anulite_items" : "Anulite Items",
   "creativetab.nuncanulus.anulite_blocks" : "Anulite Blocks",
 
