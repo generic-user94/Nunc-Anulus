@@ -1,7 +1,6 @@
 package net.generic_user94.nuncanulus.component;
 
-import net.generic_user94.nuncanulus.WeirdnessIncarnate;
-import net.minecraft.core.BlockPos;
+import net.generic_user94.nuncanulus.NuncAnulus;
 import net.minecraft.core.component.DataComponentType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -11,7 +10,7 @@ import java.util.function.UnaryOperator;
 
 public class ModDataComponents {
     public static final DeferredRegister<DataComponentType<?>> DATA_COMPONENT_TYPES =
-            DeferredRegister.createDataComponents(WeirdnessIncarnate.MOD_ID);
+            DeferredRegister.createDataComponents(NuncAnulus.MOD_ID);
 
 
 

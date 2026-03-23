@@ -1,6 +1,6 @@
 package net.generic_user94.nuncanulus.datagen;
 
-import net.generic_user94.nuncanulus.WeirdnessIncarnate;
+import net.generic_user94.nuncanulus.NuncAnulus;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -16,7 +16,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber(modid = WeirdnessIncarnate.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = NuncAnulus.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 
 public class DataGenerators {
 
@@ -37,8 +37,8 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), blockTagsProvider);
         generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
 
-        generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, WeirdnessIncarnate.MOD_ID, existingFileHelper));
-        generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, WeirdnessIncarnate.MOD_ID, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, NuncAnulus.MOD_ID, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, NuncAnulus.MOD_ID, existingFileHelper));
 
     }
 

@@ -5,8 +5,6 @@ import net.generic_user94.nuncanulus.component.ModDataComponents;
 import net.generic_user94.nuncanulus.effect.ModEffects;
 import net.generic_user94.nuncanulus.entity.ModEntities;
 import net.generic_user94.nuncanulus.item.ModItems;
-import net.generic_user94.nuncanulus.util.ModItemProperties;
-import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
@@ -25,16 +23,16 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(WeirdnessIncarnate.MOD_ID)
-public class WeirdnessIncarnate {
+@Mod(NuncAnulus.MOD_ID)
+public class NuncAnulus {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "weirdnessincarnate";
+    public static final String MOD_ID = "nuncanulus";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public WeirdnessIncarnate(IEventBus modEventBus, ModContainer modContainer) {
+    public NuncAnulus(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
