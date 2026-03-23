@@ -4,7 +4,6 @@ import net.generic_user94.nuncanulus.block.ModBlocks;
 import net.generic_user94.nuncanulus.component.ModDataComponents;
 import net.generic_user94.nuncanulus.effect.ModEffects;
 import net.generic_user94.nuncanulus.entity.ModEntities;
-import net.generic_user94.nuncanulus.entity.gecko.GeckoRenderer;
 import net.generic_user94.nuncanulus.item.ModItems;
 import net.generic_user94.nuncanulus.util.ModItemProperties;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -86,8 +85,7 @@ public class NuncAnulus {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
-            ModItemProperties.addCustomItemProperties();
-            EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
+
 
         }
     }

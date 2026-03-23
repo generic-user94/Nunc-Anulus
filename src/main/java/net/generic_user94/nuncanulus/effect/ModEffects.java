@@ -1,14 +1,8 @@
 package net.generic_user94.nuncanulus.effect;
 
 import net.generic_user94.nuncanulus.NuncAnulus;
-import net.generic_user94.nuncanulus.effect.custom.SlimeyEffect;
-import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -19,11 +13,6 @@ public class ModEffects {
             DeferredRegister.create(BuiltInRegistries.MOB_EFFECT, NuncAnulus.MOD_ID);
 
 
-    public static final Holder<MobEffect> SLIMEY_EFFECT = MOB_EFFECTS.register("slimey",
-            () -> new SlimeyEffect(MobEffectCategory.NEUTRAL, 0x36ebab)
-                    .addAttributeModifier(Attributes.MOVEMENT_SPEED,
-                            ResourceLocation.fromNamespaceAndPath(NuncAnulus.MOD_ID, "slimey"), -0.25f,
-                            AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
 
 

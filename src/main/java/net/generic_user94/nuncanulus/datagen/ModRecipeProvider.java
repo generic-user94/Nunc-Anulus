@@ -41,11 +41,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(recipeOutput, ANULITE_SMELTABLES, RecipeCategory.MISC, ModItems.ANULITE.get(), 0.25f, 100, "anulite");
 
 
-        stairBuilder(ModBlocks.ANULITE_STAIR.get(), Ingredient.of(ModBlocks.ANULITE_BLOCK)).group("anulite")
-                .unlockedBy("has_anulite_block", has(ModBlocks.ANULITE_BLOCK)).save(recipeOutput);
-        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANULITE_SLAB.get(), ModBlocks.ANULITE_BLOCK);
-
-
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
