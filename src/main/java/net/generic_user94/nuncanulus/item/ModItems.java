@@ -18,6 +18,13 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_ANULITE = ITEMS.register("raw_anulite",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> EIGHT_RING = ITEMS.register("eight_ring",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SIXTEEN_RING = ITEMS.register("sixteen_ring",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TWENTY_FOUR_RING = ITEMS.register("twenty_four_ring",
+            () -> new Item(new Item.Properties()));
+
 
 
 

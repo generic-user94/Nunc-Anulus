@@ -45,6 +45,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ANULITE.get());
         basicItem(ModItems.RAW_ANULITE.get());
 
+        basicItem(ModItems.EIGHT_RING.get());
+        basicItem(ModItems.SIXTEEN_RING.get());
+        basicItem(ModItems.TWENTY_FOUR_RING.get());
+
     }
 
     // Shoutout to El_Redstoniano for making this

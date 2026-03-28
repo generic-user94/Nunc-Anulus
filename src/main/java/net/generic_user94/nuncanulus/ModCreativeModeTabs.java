@@ -25,8 +25,13 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.ANULITE);
                         output.accept(ModItems.RAW_ANULITE);
+
                         output.accept(ModBlocks.ANULITE_BLOCK);
                         output.accept(ModBlocks.ANULITE_ORE);
+
+                        output.accept(ModItems.EIGHT_RING);
+                        output.accept(ModItems.SIXTEEN_RING);
+                        output.accept(ModItems.TWENTY_FOUR_RING);
 
                     }).build());
 

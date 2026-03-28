@@ -2,6 +2,10 @@
   "item.nuncanulus.anulite": "Anulite Ingot",
   "item.nuncanulus.raw_anulite": "Raw Anulite",
 
+  "item.nuncanulus.eight_ring": "Ring Layer (8)",
+  "item.nuncanulus.sixteen_ring": "Ring Layer (16)",
+  "item.nuncanulus.twenty_four_ring": "Ring Layer (24)",
+
   "block.nuncanulus.anulite_block": "Block of Anulite",
   "block.nuncanulus.anulite_ore": "Anulite Ore",
 
