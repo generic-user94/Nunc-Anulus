@@ -1,0 +1,4 @@
+// 1.21.1	2026-03-26T21:39:49.7711262	Registries
+aec588d0addc3efaee72420ad10ecf6cc6b4b7f5 data/nuncanulus/neoforge/biome_modifier/add_anulite_ore.json
+0d97097cb4bcfddb9a47c0f6ee4a9ed1e39d8123 data/nuncanulus/worldgen/configured_feature/anulite_ore.json
+62e86444daf4291dcbd64e88031b4e2d9ab37a1d data/nuncanulus/worldgen/placed_feature/anulite_ore_placed.json

@@ -4,6 +4,7 @@ import net.generic_user94.nuncanulus.NuncAnulus;
 import net.generic_user94.nuncanulus.worldgen.ModBiomeModifiers;
 import net.generic_user94.nuncanulus.worldgen.ModConfiguredFeatures;
 import net.generic_user94.nuncanulus.worldgen.ModPlacedFeatures;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
@@ -21,8 +22,8 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
             .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
 
-    public ModDatapackProvider(PackOutput output, CompletableFuture<RegistrySetBuilder.PatchedRegistries> registries) {
-        super(output, registries, Set.of(NuncAnulus.MOD_ID));
+    public ModDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries, BUILDER, Set.of(NuncAnulus.MOD_ID));
     }
 
 }

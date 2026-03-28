@@ -40,7 +40,7 @@ public class DataGenerators {
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, NuncAnulus.MOD_ID, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, NuncAnulus.MOD_ID, existingFileHelper));
 
+        generator.addProvider(event.includeServer(), new ModDatapackProvider(packOutput, lookupProvider));
+
     }
-
-
 }
