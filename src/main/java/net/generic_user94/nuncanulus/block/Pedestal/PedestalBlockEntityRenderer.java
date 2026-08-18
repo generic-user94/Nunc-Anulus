@@ -30,7 +30,7 @@ public class PedestalBlockEntityRenderer implements BlockEntityRenderer<Pedestal
 
         pPoseStack.pushPose();
         pPoseStack.translate(0.5f, 1.15f, 0.5f);
-        pPoseStack.scale(0.5f, 0.5f, 0.5f);
+        pPoseStack.scale(0.5f, 0.5f, 0.50f);
         pPoseStack.mulPose(Axis.YP.rotationDegrees(pBlockEntity.getRenderingRotation()));
 
         itemRenderer.renderStatic(stack, ItemDisplayContext.FIXED, getLightLevel(pBlockEntity.getLevel(),
