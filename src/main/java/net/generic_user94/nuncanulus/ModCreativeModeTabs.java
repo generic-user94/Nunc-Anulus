@@ -33,6 +33,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SIXTEEN_RING);
                         output.accept(ModItems.TWENTY_FOUR_RING);
 
+                        output.accept(ModBlocks.PEDESTAL);
+
                     }).build());
 
 

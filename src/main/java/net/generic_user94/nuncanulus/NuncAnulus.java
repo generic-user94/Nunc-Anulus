@@ -1,5 +1,6 @@
 package net.generic_user94.nuncanulus;
 
+import net.generic_user94.nuncanulus.block.ModBlockEntities;
 import net.generic_user94.nuncanulus.block.ModBlocks;
 import net.generic_user94.nuncanulus.component.ModDataComponents;
 import net.generic_user94.nuncanulus.effect.ModEffects;
@@ -52,6 +53,7 @@ public class NuncAnulus {
         ModEffects.register(modEventBus);
 
         ModEntities.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
